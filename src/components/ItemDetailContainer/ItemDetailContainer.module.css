@@ -16,11 +16,22 @@
     border: 1px solid #ffcccc;
 }
 
-/* Animación de carga */
+.detailContainer {
+    animation: fadeIn 0.5s ease;
+}
+
+.error,
+.notFound {
+    color: #d32f2f;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
 
     to {

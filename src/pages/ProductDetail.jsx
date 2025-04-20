@@ -1,11 +1,13 @@
-// pages/ProductDetail.jsx
 import React from 'react';
 import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer';
+import styles from './ProductDetail.module.css';
 
 const ProductDetail = () => {
     return (
-        <main>
-            <ItemDetailContainer />
+        <main className={styles.productDetailPage}>
+            <div className={styles.container}>
+                <ItemDetailContainer />
+            </div>
         </main>
     );
 };
