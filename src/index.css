@@ -34,7 +34,7 @@ button {
 }
 
 .mainContainer {
-  max-width: 1500px;
+  max-width: 1580px;
   margin: 0 auto;
   padding: 20px;
   min-height: calc(100vh - 120px);
