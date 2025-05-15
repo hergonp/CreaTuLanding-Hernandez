@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .nav {
-    background-color: #2c3e50;
+    background-color: #006e64;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -18,11 +22,12 @@
 .logo {
     display: flex;
     align-items: center;
+    font-family: 'Ruge Boogie', cursive;
     gap: 10px;
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: normal;
+    font-size: 45px;
 }
 
 .logo img {
@@ -35,51 +40,20 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    color: aquamarine;
 }
+
 
 .navLink {
     color: white;
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s;
+    font-family: "Noto Sans Display", sans-serif;
+    font-weight: bold;
 }
 
 .navLink:hover {
     opacity: 0.8;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdownContent {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    padding: 10px 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-    z-index: 10;
-}
-
-.dropdown:hover .dropdownContent {
-    opacity: 1;
-    visibility: visible;
-}
-
-.dropdownLink {
-    display: block;
-    padding: 8px 16px;
-    color: whitesmoke;
-    text-decoration: none;
-    transition: background 0.2s;
-}
-
-.dropdownLink:hover {
-    background: #f0f0f0;
+    transform: translateY(-3px);
 }

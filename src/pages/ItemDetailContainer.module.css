@@ -1,0 +1,170 @@
+.bookDetailContainer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.bookContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.bookImageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #f0fbff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.bookImage {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.bookInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.bookTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.bookAuthor {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.bookPrice {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2a9d8f;
+}
+
+.originalPrice {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: #999;
+}
+
+
+.bookMeta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    font-size: 0.95rem;
+    color: #555;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.stockContainer {
+    margin: 1rem 0;
+}
+
+.inStock {
+    color: #2a9d8f;
+    font-weight: 500;
+}
+
+.outOfStock {
+    color: #e63946;
+    font-weight: 500;
+}
+
+.counterContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.addToCartButton {
+    padding: 0.8rem 1.5rem;
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.addToCartButton:hover:not(:disabled) {
+    background: #21867a;
+}
+
+.addToCartButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.bookDescription {
+    margin-top: 2rem;
+}
+
+.bookDescription h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.bookDescription p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .bookContent {
+        grid-template-columns: 1fr;
+    }
+    
+    .additionalInfo {
+        grid-template-columns: 1fr;
+    }
+    
+    .bookMeta {
+        grid-template-columns: 1fr;
+    }
+    
+    .counterContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .addToCartButton {
+        max-width: 100%;
+    }
+}

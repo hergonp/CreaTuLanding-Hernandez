@@ -2,7 +2,7 @@
   --primary: #1976d2;
   --primary-dark: #1565c0;
   --secondary: #f5f5f5;
-  --text: #333;
+  --text: #000000;
   --text-light: #777;
   --border: #e0e0e0;
   --success: #2e7d32;
@@ -17,9 +17,9 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+  /* line-height: 1.6; */
   color: var(--text);
-  background-color: #f9f9f9;
+  background-color: #f0fbff;
 }
 
 a {
@@ -34,7 +34,7 @@ button {
 }
 
 .mainContainer {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
   min-height: calc(100vh - 120px);

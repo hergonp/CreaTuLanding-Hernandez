@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router';
 import NavBar from './components/Header/NavBar';
 import Home from './pages/Home';
-import Catalog from './pages/Catalog';
-import Category from './pages/Category';
-import ProductDetail from './pages/ProductDetail';
 import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
+import Cart from './pages/Cart';
+import ItemListContainer from './pages/ItemListContainer';
+import ItemDetailContainer from './pages/ItemDetailContainer';
+import Checkout from './pages/Checkout';
 import './App.css';
 
 function App() {
@@ -14,12 +14,12 @@ function App() {
       <NavBar />
       <main className="main-content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/category/:categoryId" element={<Category />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/" element={<ItemListContainer />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/cart" element={<Cart />}/>
+          <Route path='checkout' element={<Checkout />}/>
+          <Route path='/item/:id' element={<ItemDetailContainer />}/>
+          <Route path='/category/:category' element={<ItemListContainer />}/>
         </Routes>
       </main>
     </>

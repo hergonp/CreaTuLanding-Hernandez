@@ -1,4 +1,49 @@
 .cartWidget {
     position: relative;
+    display: inline-block;
+}
+
+.cartLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.cartLink:hover {
+    transform: scale(1.05);
+}
+
+.cartIcon {
+    width: 30px;
+    height: 30px;
+    color: var(--primary-color, #333);
+}
+
+.itemCount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--accent-color, #ff4757);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
